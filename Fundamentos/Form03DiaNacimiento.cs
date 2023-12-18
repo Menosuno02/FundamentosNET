@@ -16,5 +16,14 @@ namespace Fundamentos
         {
             InitializeComponent();
         }
+
+        private void btnDiaNacimiento_Click(object sender, EventArgs e)
+        {
+            int dia = int.Parse(txtDia.Text);
+            int mes = int.Parse(txtMes.Text);
+            int anyo = int.Parse(txtAnyo.Text);
+            DateTime diaNacimiento = new DateTime(anyo, mes, dia);
+            txtDiaSemana.Text = diaNacimiento.DayOfWeek.ToString();
+        }
     }
 }

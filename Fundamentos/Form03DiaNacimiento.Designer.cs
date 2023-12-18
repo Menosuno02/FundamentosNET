@@ -95,6 +95,7 @@
             btnDiaNacimiento.TabIndex = 6;
             btnDiaNacimiento.Text = "Calcular día semana";
             btnDiaNacimiento.UseVisualStyleBackColor = true;
+            btnDiaNacimiento.Click += btnDiaNacimiento_Click;
             // 
             // lblDiaSemana
             // 
@@ -116,7 +117,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(390, 142);
+            ClientSize = new Size(390, 133);
             Controls.Add(txtDiaSemana);
             Controls.Add(lblDiaSemana);
             Controls.Add(btnDiaNacimiento);
