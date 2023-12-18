@@ -14,6 +14,7 @@ namespace Fundamentos
             this.txtNombre.Width = 150;
             this.BackColor = Color.Red;
             this.txtNombre.TextAlign = HorizontalAlignment.Center;
+
         }
     }
 }
