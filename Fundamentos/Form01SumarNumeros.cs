@@ -21,7 +21,7 @@ namespace Fundamentos
         {
             int num1 = int.Parse(txtNum1.Text);
             int num2 = int.Parse(txtNum2.Text);
-            txtResult.Text = "" + (num1 + num2);
+            txtResult.Text = (num1 + num2).ToString();
         }
     }
 }

@@ -99,7 +99,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(254, 129);
+            ClientSize = new Size(252, 129);
             Controls.Add(txtResult);
             Controls.Add(lblResult);
             Controls.Add(btnSumarNumeros);
