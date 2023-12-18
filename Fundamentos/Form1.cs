@@ -15,6 +15,13 @@ namespace Fundamentos
             this.BackColor = Color.Red;
             this.txtNombre.TextAlign = HorizontalAlignment.Center;
 
+            short pequeño = 888;
+            int numero = pequeño;
+            string texto = "12345";
+            int textoNum = int.Parse(texto);
+            string boton = this.btnPulsar.ToString();
+            int mayor = 88;
+            short otro = (short)mayor;
         }
     }
 }
