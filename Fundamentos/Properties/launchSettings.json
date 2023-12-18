@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Fundamentos": {
+      "commandName": "Project",
+      "hotReloadEnabled": false
+    }
+  }
+}

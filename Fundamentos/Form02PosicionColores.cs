@@ -1,14 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-
-namespace Fundamentos
+﻿namespace Fundamentos
 {
     public partial class Form02PosicionColores : Form
     {
@@ -29,7 +19,22 @@ namespace Fundamentos
             int rojo = int.Parse(txtRojo.Text);
             int verde = int.Parse(txtVerde.Text);
             int azul = int.Parse(txtAzul.Text);
-            this.BackColor = Color.FromArgb(rojo, verde, azul);
+            if (rojo < 0 || rojo > 255)
+            {
+                MessageBox.Show("El valor del rojo es incorrecto");
+            }
+            else if (verde < 0 || verde > 255)
+            {
+                MessageBox.Show("El valor del verde es incorrecto");
+            }
+            else if (azul < 0 || azul > 255)
+            {
+                MessageBox.Show("El valor del azul es incorrecto");
+            }
+            else
+            {
+                this.BackColor = Color.FromArgb(rojo, verde, azul);
+            }
         }
     }
 }
