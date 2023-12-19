@@ -117,7 +117,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(337, 121);
+            ClientSize = new Size(337, 123);
             Controls.Add(txtDiaSemana);
             Controls.Add(lblDiaSemana);
             Controls.Add(btnDiaNacimiento);
