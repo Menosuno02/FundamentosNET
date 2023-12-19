@@ -58,7 +58,7 @@
             // lblMes
             // 
             lblMes.AutoSize = true;
-            lblMes.Location = new Point(135, 9);
+            lblMes.Location = new Point(118, 9);
             lblMes.Name = "lblMes";
             lblMes.Size = new Size(29, 15);
             lblMes.TabIndex = 2;
@@ -66,7 +66,7 @@
             // 
             // txtMes
             // 
-            txtMes.Location = new Point(135, 27);
+            txtMes.Location = new Point(118, 27);
             txtMes.Name = "txtMes";
             txtMes.Size = new Size(100, 23);
             txtMes.TabIndex = 3;
@@ -74,7 +74,7 @@
             // lblAnyo
             // 
             lblAnyo.AutoSize = true;
-            lblAnyo.Location = new Point(262, 9);
+            lblAnyo.Location = new Point(224, 9);
             lblAnyo.Name = "lblAnyo";
             lblAnyo.Size = new Size(29, 15);
             lblAnyo.TabIndex = 4;
@@ -82,7 +82,7 @@
             // 
             // txtAnyo
             // 
-            txtAnyo.Location = new Point(262, 27);
+            txtAnyo.Location = new Point(224, 27);
             txtAnyo.Name = "txtAnyo";
             txtAnyo.Size = new Size(100, 23);
             txtAnyo.TabIndex = 5;
@@ -91,7 +91,7 @@
             // 
             btnDiaNacimiento.Location = new Point(12, 56);
             btnDiaNacimiento.Name = "btnDiaNacimiento";
-            btnDiaNacimiento.Size = new Size(350, 23);
+            btnDiaNacimiento.Size = new Size(312, 23);
             btnDiaNacimiento.TabIndex = 6;
             btnDiaNacimiento.Text = "Calcular día semana";
             btnDiaNacimiento.UseVisualStyleBackColor = true;
@@ -100,7 +100,7 @@
             // lblDiaSemana
             // 
             lblDiaSemana.AutoSize = true;
-            lblDiaSemana.Location = new Point(12, 92);
+            lblDiaSemana.Location = new Point(12, 89);
             lblDiaSemana.Name = "lblDiaSemana";
             lblDiaSemana.Size = new Size(68, 15);
             lblDiaSemana.TabIndex = 7;
@@ -108,16 +108,16 @@
             // 
             // txtDiaSemana
             // 
-            txtDiaSemana.Location = new Point(100, 89);
+            txtDiaSemana.Location = new Point(86, 85);
             txtDiaSemana.Name = "txtDiaSemana";
-            txtDiaSemana.Size = new Size(262, 23);
+            txtDiaSemana.Size = new Size(238, 23);
             txtDiaSemana.TabIndex = 8;
             // 
             // Form03DiaNacimiento
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(390, 133);
+            ClientSize = new Size(337, 121);
             Controls.Add(txtDiaSemana);
             Controls.Add(lblDiaSemana);
             Controls.Add(btnDiaNacimiento);
