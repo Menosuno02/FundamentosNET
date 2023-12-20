@@ -63,15 +63,16 @@
             // txtValido
             // 
             txtValido.Location = new Point(12, 99);
+            txtValido.Multiline = true;
             txtValido.Name = "txtValido";
-            txtValido.Size = new Size(195, 23);
+            txtValido.Size = new Size(195, 182);
             txtValido.TabIndex = 3;
             // 
             // Form06ValidarMail
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(219, 134);
+            ClientSize = new Size(222, 293);
             Controls.Add(txtValido);
             Controls.Add(btnValidar);
             Controls.Add(txtEmail);
