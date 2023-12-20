@@ -19,11 +19,15 @@ namespace Fundamentos
 
         private void btnCalcularLetra_Click(object sender, EventArgs e)
         {
-            int dni = int.Parse(txtDNI.Text);
-            string[] letras = { "T", "R", "W", "A", "G", "M",
-                "Y", "F", "P", "D", "X", "B", "N", "J","Z",
-                "S", "Q", "V", "H", "L", "C", "K", "E", "T" };
-            this.txtLetra.Text = letras[dni - (dni / 23) * 23];
+            string dni = txtDNI.Text;
+            int dniNum = int.Parse(dni.Substring(0, dni.Length - 1));
+            string letras = "TRWAGMYFPDXBNJZSQVHLCKET";
+            if (letras[dniNum - (dniNum / 23) * 23] == dni[dni.Length - 1])
+            {
+                this.txtLetra.Text = "DNI válido ";
+                this.txtLetra.Text += letras[dniNum - (dniNum / 23) * 23].ToString();
+            }
+            else this.txtLetra.Text = "DNI inválido";
         }
     }
 }
