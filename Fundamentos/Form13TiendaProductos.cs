@@ -82,6 +82,9 @@ namespace Fundamentos
             string producto2 = Convert.ToString(this.lstProductos.Items[index - 1]);
             this.lstProductos.Items[index - 1] = producto;
             this.lstProductos.Items[index] = producto2;
+            this.lstProductos.SelectedIndex = index - 1;
+            // this.lstProductos.Items.Insert(indice - 1, producto);
+            // this.lstProductos.SelectedIdnex = indice - 1;
         }
 
         private void btnBajar_Click(object sender, EventArgs e)
@@ -91,6 +94,7 @@ namespace Fundamentos
             string producto2 = Convert.ToString(this.lstProductos.Items[index + 1]);
             this.lstProductos.Items[index + 1] = producto;
             this.lstProductos.Items[index] = producto2;
+            this.lstProductos.SelectedIndex = index + 1;
         }
 
         private void lstProductos_SelectedIndexChanged(object sender, EventArgs e)
