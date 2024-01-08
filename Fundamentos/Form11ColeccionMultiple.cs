@@ -56,7 +56,14 @@ namespace Fundamentos
             for (int i = 0; i < this.lstElementos.SelectedIndices.Count; i++)
             {
                 this.lstElementos.Items.RemoveAt(this.lstElementos.SelectedIndices[i]);
+                i--;
             }
+            /*
+            for (int i = this.lstElementos.SelectedIndices.Count - 1; i >= 0; i--)
+            {
+                this.lstElementos.Items.RemoveAt(this.lstElementos.SelectedIndices[i]);
+            }
+            */
         }
     }
 }
