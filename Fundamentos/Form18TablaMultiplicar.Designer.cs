@@ -35,6 +35,7 @@
             textBox4 = new TextBox();
             textBox3 = new TextBox();
             textBox2 = new TextBox();
+            textBox1 = new TextBox();
             pnlTabla.SuspendLayout();
             SuspendLayout();
             // 
@@ -66,6 +67,7 @@
             // 
             // pnlTabla
             // 
+            pnlTabla.Controls.Add(textBox1);
             pnlTabla.Controls.Add(textBox4);
             pnlTabla.Controls.Add(textBox3);
             pnlTabla.Controls.Add(textBox2);
@@ -76,14 +78,14 @@
             // 
             // textBox4
             // 
-            textBox4.Location = new Point(24, 77);
+            textBox4.Location = new Point(24, 73);
             textBox4.Name = "textBox4";
             textBox4.Size = new Size(100, 23);
             textBox4.TabIndex = 2;
             // 
             // textBox3
             // 
-            textBox3.Location = new Point(24, 45);
+            textBox3.Location = new Point(24, 44);
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(100, 23);
             textBox3.TabIndex = 1;
@@ -94,6 +96,13 @@
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(100, 23);
             textBox2.TabIndex = 0;
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(24, 102);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(100, 23);
+            textBox1.TabIndex = 3;
             // 
             // Form18TablaMultiplicar
             // 
@@ -121,5 +130,6 @@
         private TextBox textBox4;
         private TextBox textBox3;
         private TextBox textBox2;
+        private TextBox textBox1;
     }
 }
