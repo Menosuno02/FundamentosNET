@@ -15,7 +15,18 @@ namespace Fundamentos
     {
         public Form15ArrayList()
         {
+            this.button1.Click += Button1_Click;
+
+
             InitializeComponent();
+            // Colección genérica
+            List<Button> listaBotones = new List<Button>();
+            listaBotones.Add(this.button1);
+            listaBotones.Add(this.button2);
+            listaBotones.Add(this.button3);
+            listaBotones[1].BackColor = Color.Yellow;
+            // listaBotones.Add(this.textBox1); da error
+
             // Colección no tipada
             ArrayList coleccion = new ArrayList();
             coleccion.Add(this.button1);
@@ -38,6 +49,11 @@ namespace Fundamentos
                     ((TextBox)control).Paste();
                 }
             }
+        }
+
+        private void Button1_Click(object? sender, EventArgs e)
+        {
+            throw new NotImplementedException();
         }
     }
 }
