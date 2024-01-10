@@ -16,6 +16,23 @@ namespace ProyectoClases
     {
         #region PROPIEDADES
 
+        private string[] descripciones = new string[3];
+
+        public string this[int index]
+        {
+            get
+            {
+                return this.descripciones[index];
+            }
+            set
+            {
+                this.descripciones[index] = value;
+            }
+        }
+
+        public Direccion Domicilio { get; set; }
+        public Direccion DomicilioVacaciones { get; set; }
+
         public string Nombre { get; set; }
         public string Apellidos { get; set; }
 
@@ -83,6 +100,17 @@ namespace ProyectoClases
             {
                 return GetNombreCompleto();
             }
+        }
+
+        public void GetNombreCompleto(int num1, int num2)
+        { }
+
+        public int GetNombreCompleto(int num1)
+        { return 0; }
+
+        public string GetNombreCompleto(string a, string b)
+        {
+            return "Otro más...";
         }
 
         public void MetodoParametrosOpcionales(int numero1, int numero2 = 444, int numero3 = 22)

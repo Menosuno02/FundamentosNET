@@ -30,6 +30,13 @@ namespace Fundamentos
             persona.MetodoParametrosOpcionales(8, 6);
             persona.MetodoParametrosOpcionales(55, 10, 432);
             persona.MetodoParametrosOpcionales(7, numero3: 87);
+            persona.Domicilio = new Direccion("Santa Engracia, 110", "Madrid");
+            this.lstDatosClases.Items.Add("Calle: " + persona.Domicilio.Calle);
+            persona[0] = "Descrìpción 1";
+            persona[1] = "Descripción 2";
+            this.lstDatosClases.Items.Add("Descripción[0]: " + persona[0]);
+            this.lstDatosClases.Items.Add("Descripción[1]: " + persona[1]);
+
             // persona.Genero = (TipoGenero)99;
             this.lstDatosClases.Items.Add("Nombre: " + persona.GetNombreCompleto());
             this.lstDatosClases.Items.Add("Nombre al revés: " + persona.GetNombreCompleto(false));

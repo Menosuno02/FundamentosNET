@@ -65,7 +65,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(311, 358);
+            ClientSize = new Size(305, 358);
             Controls.Add(btnCrearPersona);
             Controls.Add(lstDatosClases);
             Controls.Add(label1);
