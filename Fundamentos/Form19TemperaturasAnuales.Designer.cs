@@ -62,7 +62,7 @@
             // 
             btnGenerarMeses.Location = new Point(150, 12);
             btnGenerarMeses.Name = "btnGenerarMeses";
-            btnGenerarMeses.Size = new Size(110, 23);
+            btnGenerarMeses.Size = new Size(117, 23);
             btnGenerarMeses.TabIndex = 2;
             btnGenerarMeses.Text = "Generar meses";
             btnGenerarMeses.UseVisualStyleBackColor = true;
@@ -72,7 +72,7 @@
             // 
             btnDatos.Location = new Point(150, 41);
             btnDatos.Name = "btnDatos";
-            btnDatos.Size = new Size(110, 23);
+            btnDatos.Size = new Size(117, 23);
             btnDatos.TabIndex = 3;
             btnDatos.Text = "Mostrar datos";
             btnDatos.UseVisualStyleBackColor = true;
@@ -80,12 +80,12 @@
             // 
             // label2
             // 
-            label2.AutoSize = true;
             label2.Location = new Point(150, 84);
             label2.Name = "label2";
-            label2.Size = new Size(119, 15);
+            label2.Size = new Size(117, 15);
             label2.TabIndex = 4;
-            label2.Text = "Temperatura máxima";
+            label2.Text = "Temp. máxima";
+            label2.TextAlign = ContentAlignment.TopCenter;
             // 
             // txtTemperaturaMax
             // 
@@ -105,21 +105,21 @@
             // 
             // label3
             // 
-            label3.AutoSize = true;
             label3.Location = new Point(150, 145);
             label3.Name = "label3";
             label3.Size = new Size(117, 15);
             label3.TabIndex = 7;
-            label3.Text = "Temperatura mínima";
+            label3.Text = "Temp. mínima";
+            label3.TextAlign = ContentAlignment.TopCenter;
             // 
             // label4
             // 
-            label4.AutoSize = true;
             label4.Location = new Point(150, 203);
             label4.Name = "label4";
-            label4.Size = new Size(72, 15);
+            label4.Size = new Size(117, 15);
             label4.TabIndex = 9;
             label4.Text = "Media anual";
+            label4.TextAlign = ContentAlignment.TopCenter;
             // 
             // txtMedia
             // 
@@ -132,7 +132,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(309, 277);
+            ClientSize = new Size(286, 277);
             Controls.Add(label4);
             Controls.Add(txtMedia);
             Controls.Add(label3);

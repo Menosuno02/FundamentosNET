@@ -25,6 +25,8 @@ namespace Fundamentos
 
         private void btnGenerarMeses_Click(object sender, EventArgs e)
         {
+            lstTemperaturas.Items.Clear();
+            temperaturas.Clear();
             foreach (string mes in this.meses)
             {
                 int temp = random.Next(-15, 40);
