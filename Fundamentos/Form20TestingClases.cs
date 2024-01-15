@@ -48,12 +48,17 @@ namespace Fundamentos
         private void btnCrearEmpleado_Click(object sender, EventArgs e)
         {
             // Empleado emp = new Empleado("Empleado", "Apellidos");
-            /*
+
             Empleado emp = new Empleado();
+            emp.Nombre = "Empleado";
+            emp.Apellidos = "Empleado";
+            this.lstDatosClases.Items.Add(emp.ToString());
             this.lstDatosClases.Items.Add("Salario mínimo emple: " + emp.GetSalarioMinimo());
             this.lstDatosClases.Items.Add("Vacaciones Emple: " + emp.GetDiasVacaciones());
-            */
             Director dir = new Director();
+            dir.Nombre = "Dire";
+            dir.Apellidos = "Dire";
+            this.lstDatosClases.Items.Add(dir.ToString());
             this.lstDatosClases.Items.Add("Salario mínimo director: " + dir.GetSalarioMinimo());
             this.lstDatosClases.Items.Add("Vacaciones director: " + dir.GetDiasVacaciones());
         }

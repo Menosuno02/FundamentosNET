@@ -17,8 +17,9 @@ namespace ProyectoClases
 
         public new int GetDiasVacaciones()
         {
+            int vacaciones = base.GetDiasVacaciones();
             Debug.WriteLine("GetDiasVacaciones Director");
-            return 30;
+            return vacaciones + 8;
         }
     }
 }
