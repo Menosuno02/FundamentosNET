@@ -44,5 +44,18 @@ namespace Fundamentos
             this.lstDatosClases.Items.Add("Género: " + persona.Genero);
             this.lstDatosClases.Items.Add("Nacionalidad: " + persona.Nacionalidad);
         }
+
+        private void btnCrearEmpleado_Click(object sender, EventArgs e)
+        {
+            // Empleado emp = new Empleado("Empleado", "Apellidos");
+            /*
+            Empleado emp = new Empleado();
+            this.lstDatosClases.Items.Add("Salario mínimo emple: " + emp.GetSalarioMinimo());
+            this.lstDatosClases.Items.Add("Vacaciones Emple: " + emp.GetDiasVacaciones());
+            */
+            Director dir = new Director();
+            this.lstDatosClases.Items.Add("Salario mínimo director: " + dir.GetSalarioMinimo());
+            this.lstDatosClases.Items.Add("Vacaciones director: " + dir.GetDiasVacaciones());
+        }
     }
 }
