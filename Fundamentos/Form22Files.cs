@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProyectoClases.Helpers;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,12 @@ namespace Fundamentos
 {
     public partial class Form22Files : Form
     {
+        //  private HelperFiles helper;
+
         public Form22Files()
         {
             InitializeComponent();
+            // this.helper = new HelperFiles();
         }
 
         private async void btnRead_Click(object sender, EventArgs e)
@@ -24,17 +28,8 @@ namespace Fundamentos
             if (ofd.ShowDialog() == DialogResult.OK)
             {
                 string path = ofd.FileName;
-                FileInfo file = new FileInfo(path);
-                // Con TextReader vamos a abrir y leer el fichero
-                // using para asegurarnos de que se ha creado reader
-                using (TextReader reader = file.OpenText())
-                {
-                    // read asíncrono, usamos await
-                    string contenido = await reader.ReadToEndAsync();
-                    reader.Close();
-                    this.txtContenido.Text = contenido;
-                    this.DibujarNombresListbox(contenido);
-                }
+                string data = await HelperFiles.ReadFileAsync(path);
+                this.DibujarNombresListbox(data);
             }
         }
 
@@ -55,20 +50,13 @@ namespace Fundamentos
 
         private async void btnWrite_Click(object sender, EventArgs e)
         {
-            SaveFileDialog svf = new SaveFileDialog();
-            if (svf.ShowDialog() == DialogResult.OK)
+            SaveFileDialog sfd = new SaveFileDialog();
+            if (sfd.ShowDialog() == DialogResult.OK)
             {
-                string path = svf.FileName;
-                FileInfo file = new FileInfo(path);
-                // Usamos TextWriter
-                using (TextWriter writer = file.CreateText())
-                {
-                    string contenido = GetNombresListbox();
-                    await writer.WriteAsync(contenido);
-                    await writer.FlushAsync();
-                    writer.Close();
-                    MessageBox.Show("Datos almacenados");
-                }
+                string path = sfd.FileName;
+                string data = GetNombresListbox();
+                await HelperFiles.WriteFileAsync(path, data);
+                MessageBox.Show("Datos almacenados");
             }
         }
 

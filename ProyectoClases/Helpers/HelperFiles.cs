@@ -8,7 +8,7 @@ namespace ProyectoClases.Helpers
 {
     public class HelperFiles
     {
-        public async Task<string> ReadFileAsync(string path)
+        public static async Task<string> ReadFileAsync(string path)
         {
             FileInfo file = new FileInfo(path);
             using (TextReader reader = file.OpenText())
@@ -19,7 +19,7 @@ namespace ProyectoClases.Helpers
             }
         }
 
-        public async Task WriteFileAsync(string path, string data)
+        public static async Task WriteFileAsync(string path, string data)
         {
             FileInfo file = new FileInfo(path);
             using (TextWriter writer = file.CreateText())
