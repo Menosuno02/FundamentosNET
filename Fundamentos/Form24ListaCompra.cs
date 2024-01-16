@@ -61,5 +61,13 @@ namespace Fundamentos
                 this.DibujarProductosListbox();
             }
         }
+
+        private void lstProductos_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            int index = this.lstProductos.SelectedIndex;
+            Producto prod = this.helper.Productos[index];
+            this.txtNombre.Text = prod.Nombre;
+            this.txtCantidad.Text = prod.Cantidad.ToString();
+        }
     }
 }

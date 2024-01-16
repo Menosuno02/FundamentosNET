@@ -47,6 +47,7 @@
             lstProductos.Name = "lstProductos";
             lstProductos.Size = new Size(120, 154);
             lstProductos.TabIndex = 0;
+            lstProductos.SelectedIndexChanged += lstProductos_SelectedIndexChanged;
             // 
             // label1
             // 
