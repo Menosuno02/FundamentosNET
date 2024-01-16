@@ -11,7 +11,7 @@ namespace Fundamentos
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new Form25ObjetoXMLMascota());
+            Application.Run(new Form26ColeccionXMLMascotas());
         }
     }
 }
